@@ -66,9 +66,6 @@ Parallax.prototype={
     }
 }
 
-if ( typeof dwfis.define === 'function') {
-    // AMD. Register as an anonymous module.
+if ( typeof dwfis !== "undefined" && typeof dwfis.define === "function") {
     module.exports = Parallax;
-} else {
-    window.back2top = Parallax;
 }
